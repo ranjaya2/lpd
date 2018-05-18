@@ -148,7 +148,7 @@ if __name__ == '__main__':
     #dropout = Dropout(0.1)
     #new - add 1 more dense
     #fc2 = Dense(1024, activation ='relu', name='fcnew2')(fc1)
-    dropout=0.5
+    dropout = Dropout(0.3)
     detection = Dense(4, activation='sigmoid', name='fcnew3')(fc1)
 
     #create custom vgg
